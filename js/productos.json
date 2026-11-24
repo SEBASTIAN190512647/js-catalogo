@@ -1,0 +1,97 @@
+[
+  {
+    "id": "nfc-01",
+    "categoria": "nfc",
+    "etiqueta": "NFC Smart",
+    "titulo": "Tarjeta de Presentación NFC Personalizada",
+    "descripcion": "Comparte tu contacto, WhatsApp, Instagram y links de pago Deuna! con un solo toque. Interfaz y procedimientos incluidos en la compra del ticket.",
+    "keywords": ["targeta", "contacto", "negocio", "digital", "qr", "chip", "inteligente"],
+    "detalles": [
+      "Interfaz digital personalizada y procedimientos incluidos en la compra.",
+      "Programación lista para compartir contacto (vCard), redes sociales y link Deuna!.",
+      "Compatible con Android y iPhone sin necesidad de instalar apps.",
+      "Entrega y prueba presencial en Chone."
+    ],
+    
+    "precio": 15.00,
+    "imagen": "assets/img/tarjeta-nfc.jpg",
+    "destacado": true
+  },
+  {
+    "id": "nfc-02",
+    "categoria": "nfc",
+    "etiqueta": "NFC Negocios",
+    "titulo": "Stickers / Tags NFC para Locales Comerciales",
+    "descripcion": "Ideal para barberías, cafeterías o tiendas: conecta clientes a tu Wi-Fi, menú digital o pagos rápidos sin fricción.",
+    "keywords": ["targeta", "contacto", "negocio", "digital", "qr", "chip", "inteligente"],
+    "precio": 8.00,
+    "imagen": "assets/img/sticker-nfc.jpg",
+    "destacado": false
+  },
+  {
+    "id": "dev-01",
+    "categoria": "desarrollo",
+    "etiqueta": "Desarrollo Web",
+    "titulo": "Landing Page / Catálogo Web Profesional",
+    "descripcion": "Diseño moderno, rápido y adaptado a celulares con botones directos a WhatsApp para impulsar tu negocio o marca personal.",
+    "keywords": ["landing page", "catalogo web", "pagina web", "diseño web", "celulares", "whatsapp", "negocio", "marca personal"],
+    "precio": 60.00,
+    "imagen": "assets/img/desarrollo-web.jpg",
+    "destacado": true
+  },
+  {
+    "id": "dev-02",
+    "categoria": "desarrollo",
+    "etiqueta": "Sistemas & Apps",
+    "titulo": "Desarrollo de Sistemas Web a Medida",
+    "descripcion": "Sistemas de gestión, inventarios, control de mantenimiento y paneles administrativos hechos con Python, Django y bases de datos relacionales.",
+    "precio": 150.00,
+    "keywords": ["sistemas", "aplicaciones", "web", "python", "django", "bases de datos", "inventarios", "control"],
+    "imagen": "assets/img/desarrollo-web.jpg",
+    "destacado": false
+  },
+  {
+    "id": "dat-01",
+    "categoria": "datos",
+    "etiqueta": "Data Analytics",
+    "titulo": "Limpieza de Datos y Dashboards Interactivos",
+    "descripcion": "Transformo tus hojas de cálculo o bases de datos en reportes visuales claros (Excel avanzado, Python/Pandas, Power BI) para tomar mejores decisiones.",
+    "keywords": ["datos", "data", "analisis", "excel", "power bi", "python", "pandas", "dashboards"],
+    "precio": 40.00,
+    "imagen": "assets/img/analisis-datos.jpg",
+    "destacado": true
+  },
+  {
+    "id": "sop-01",
+    "categoria": "soporte",
+    "etiqueta": "Soporte PC",
+    "titulo": "Mantenimiento Profundo y Optimización de PC",
+    "descripcion": "Limpieza interna completa, cambio de pasta térmica, formateo limpio, optimización del sistema e instalación de paquetes Office en Chone.",
+    "keywords": ["pc", "computadora", "ordenador", "laptop", "portatil", "formateo", "mantenimiento", "optimización"],
+    "precio": 20.00,
+    "imagen": "assets/img/soporte-pc.jpg",
+    "destacado": false
+  },
+  {
+    "id": "sop-02",
+    "categoria": "soporte",
+    "etiqueta": "Soporte Móvil",
+    "titulo": "Soporte Técnico y Software para Teléfonos",
+    "descripcion": "Diagnóstico de fallos, restauración de sistema, modo recuperación (iOS/Android), respaldo de información y configuración avanzada de dispositivos.",
+    "keywords": ["celular", "telefono", "tlf", "iphone", "android", "pantalla", "reparacion"],
+    "precio": 15.00,
+    "imagen": "assets/img/soporte-tlf.jpg",
+    "destacado": false
+  },
+  {
+    "id": "art-01",
+    "categoria": "artesanias",
+    "etiqueta": "Hecho a Mano",
+    "titulo": "Figuras Personalizadas en Limpiapipas",
+    "descripcion": "Diseños artesanales únicos hechos 100% con limpiapipas (personajes de Studio Ghibli como Susuwatari, detalles y pedidos personalizados).",
+    "keywords": ["artesania", "hecho a mano", "manualidades", "limpiapipas", "figuras", "decoracion"],
+    "precio": 5.00,
+    "imagen": "assets/img/limpiapipas.jpg",
+    "destacado": false
+  }
+]

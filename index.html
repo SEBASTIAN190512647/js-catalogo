@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS | Soluciones NFC, Artesanías & Soporte Técnico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+<!-- Reemplaza el <header> anterior por este con el ícono de flama SVG -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-neutral-950/85 border-b border-neutral-800">
+  <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-3 group">
+      <div class="relative w-11 h-11 rounded-xl bg-gradient-to-tr from-red-600 via-orange-500 to-amber-400 flex items-center justify-center shadow-lg shadow-orange-500/30 group-hover:scale-105 transition">
+        <!-- Ícono de flama sutil de fondo -->
+        <svg class="w-7 h-7 text-neutral-950/20 absolute" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2c0 0-6 5.686-6 11a6 6 0 0 0 12 0c0-2.5-1.5-5-3-6.5 0 2-1.5 3-2.5 3 1-2.5.5-5.5-.5-7.5z"/>
+        </svg>
+        <span class="relative font-black text-xl tracking-tighter text-neutral-950 italic">JS</span>
+      </div>
+      <div>
+        <span class="block font-extrabold text-lg leading-none bg-gradient-to-r from-orange-400 via-amber-300 to-red-400 bg-clip-text text-transparent">
+          JS Tech & Studio
+        </span>
+        <span class="text-xs text-neutral-400">Software • Datos • NFC • Soporte</span>
+      </div>
+    </a>
+
+    <a href="https://wa.me/593969504030" target="_blank" 
+       class="text-sm font-bold px-4 py-2.5 rounded-xl bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-neutral-950 shadow-md shadow-orange-500/20 transition">
+      Cotizar Ahora
+    </a>
+  </div>
+</header>
+
+  <!-- Hero Principal -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-10 w-full">
+    <section class="text-center max-w-2xl mx-auto mb-10">
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-4">
+        Innovación Digital, Arte a Mano y <span class="text-orange-500">Soporte Técnico</span>
+      </h1>
+      <p class="text-neutral-400 text-base sm:text-lg">
+        Catálogo oficial de productos y servicios en Chone. Elige lo que necesitas y coordina tu pedido al instante por WhatsApp.
+      </p>
+    </section>
+
+    <!-- Buscador en Tiempo Real -->
+    <div class="max-w-md mx-auto mb-6">
+      <div class="relative">
+        <input type="search" id="buscador-input" placeholder="Buscar servicio, NFC, limpiapipas, PC..." 
+              class="w-full pl-10 pr-4 py-2.5 rounded-xl bg-neutral-900 border border-neutral-800 text-sm text-white placeholder-neutral-500 focus:outline-none focus:border-orange-500 transition" />
+        <svg class="w-4 h-4 text-neutral-500 absolute left-3.5 top-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Filtros de Categoría -->
+    <nav aria-label="Filtros de productos" class="flex flex-wrap justify-center gap-2 mb-10" id="filtros-container">
+  <button data-categoria="todos" class="filtro-btn px-4 py-2 rounded-full text-sm font-semibold bg-orange-500 text-neutral-950 transition">
+    Todos
+  </button>
+  <button data-categoria="nfc" class="filtro-btn px-4 py-2 rounded-full text-sm font-semibold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition">
+    Tarjetas NFC
+  </button>
+  <button data-categoria="desarrollo" class="filtro-btn px-4 py-2 rounded-full text-sm font-semibold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition">
+    Desarrollo Web
+  </button>
+  <button data-categoria="datos" class="filtro-btn px-4 py-2 rounded-full text-sm font-semibold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition">
+    Análisis de Datos
+  </button>
+  <button data-categoria="soporte" class="filtro-btn px-4 py-2 rounded-full text-sm font-semibold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition">
+    Soporte PC & Tlf
+  </button>
+  <button data-categoria="artesanias" class="filtro-btn px-4 py-2 rounded-full text-sm font-semibold bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800 transition">
+    Limpiapipas
+  </button>
+</nav>
+
+    <!-- Grid Dinámico de Productos -->
+    <section id="catalogo-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Aquí app.js inyectará las tarjetas -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-neutral-900 py-6 text-center text-sm text-neutral-500">
+    <p>&copy; 2026 JS — Chone, Manabí, Ecuador.</p>
+  </footer>
+
+  <!-- Modal Nativo de Detalles -->
+  <dialog id="producto-modal" class="backdrop:bg-black/80 backdrop:backdrop-blur-sm bg-neutral-900 border border-neutral-800 text-neutral-100 rounded-2xl max-w-lg w-[92%] p-0 shadow-2xl">
+    <div id="modal-contenido">
+      <!-- Se llena dinámicamente desde app.js -->
+    </div>
+  </dialog>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
